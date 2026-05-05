@@ -327,3 +327,23 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* colore base */
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* hover */
+.menu a:hover {
+  color: #d4af37;
+}
+
+/* PAGINA ATTIVA */
+body.calendario .menu a[href="calendario.html"],
+body.home .menu a[href="index.html"],
+body.ministranti .menu a[href="ministranti.html"],
+body.contatti .menu a[href="contatti.html"] {
+  color: #d4af37;
+}

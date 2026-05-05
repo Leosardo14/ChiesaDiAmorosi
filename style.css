@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
-  background-color: #f5efe4;
+  background-color: #f4efe6;
 }
 
 /* NAVBAR */
@@ -19,12 +19,32 @@ nav {
   color: white;
 }
 
-nav ul {
+.menu {
   display: flex;
   gap: 40px;
   list-style: none;
   font-size: 14px;
   letter-spacing: 2px;
+}
+
+.menu li {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #d4af37;
+  bottom: -6px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.menu li:hover::after {
+  width: 100%;
 }
 
 .logo {
@@ -43,19 +63,24 @@ nav ul {
 .overlay {
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.45);
-  padding: 60px;
+  padding: 80px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.65)
+  );
 }
 
 /* TESTI */
 .subtitle {
   font-style: italic;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 100px;
+  font-size: 110px;
+  letter-spacing: 6px;
   margin: 10px 0;
 }
 
@@ -63,29 +88,37 @@ h1 {
   font-size: 20px;
 }
 
-/* BOTTONI */
-.buttons {
+/* BOTTONI HERO */
+.hero-buttons {
   margin-top: 30px;
 }
 
-button {
-  padding: 14px 28px;
+.btn {
+  padding: 14px 30px;
   margin: 10px;
+  text-decoration: none;
   font-size: 14px;
   letter-spacing: 1px;
-  cursor: pointer;
+  transition: 0.3s;
 }
 
 .gold {
   background: linear-gradient(135deg, #d4af37, #b8962e);
-  border: none;
   color: white;
 }
 
+.gold:hover {
+  opacity: 0.9;
+}
+
 .outline {
-  background: transparent;
   border: 1px solid #d4af37;
   color: #d4af37;
+}
+
+.outline:hover {
+  background: #d4af37;
+  color: white;
 }
 
 /* CARDS */
@@ -98,19 +131,66 @@ button {
 }
 
 .card {
+  display: block;
+  text-decoration: none;
   background: #f7f0e2;
-  padding: 30px;
-  width: 280px;
+  padding: 50px 30px;
+  width: 300px;
   text-align: center;
   border-radius: 12px;
+  color: #5a4a2f;
+
+  border: 1px solid rgba(200, 169, 106, 0.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  transition: all 0.4s ease;
 }
 
-.card h3 {
-  font-size: 16px;
-  letter-spacing: 1px;
+/* linea decorativa */
+.card::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #d4af37;
+  margin: 0 auto 15px;
 }
 
 .icon {
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+
+  background: linear-gradient(
+    135deg,
+    #f3e4c7,
+    #e0c07a
+  );
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
 }

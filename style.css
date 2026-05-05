@@ -1,1 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #f5efe4;
+}
 
+/* NAVBAR */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.logo {
+  font-size: 28px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('images/chiesa.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.45);
+  padding: 60px;
+}
+
+/* TESTI */
+.subtitle {
+  font-style: italic;
+  font-size: 24px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 100px;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 20px;
+}
+
+/* BOTTONI */
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  padding: 14px 28px;
+  margin: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.gold {
+  background: linear-gradient(135deg, #d4af37, #b8962e);
+  border: none;
+  color: white;
+}
+
+.outline {
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px;
+  background-color: #efe6d6;
+}
+
+.card {
+  background: #f7f0e2;
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.card h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}

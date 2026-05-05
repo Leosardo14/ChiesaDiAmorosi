@@ -198,3 +198,38 @@ h1 {
     font-size: 60px;
   }
 }
+
+/* PAGINA INTERNA */
+.page {
+  overflow: auto;
+}
+
+/* HERO PIÙ PICCOLO */
+.hero.small {
+  height: 40vh;
+}
+
+/* CALENDARIO */
+.calendar {
+  padding: 60px;
+  background-color: #efe6d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.event {
+  width: 400px;
+  background: #f7f0e2;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(200, 169, 106, 0.5);
+
+  transition: 0.3s;
+}
+
+.event:hover {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #f3e4c7, #e0c07a);
+}

@@ -347,3 +347,41 @@ body.ministranti .menu a[href="ministranti.html"],
 body.contatti .menu a[href="contatti.html"] {
   color: #d4af37;
 }
+
+
+/* POSIZIONAMENTO BASE */
+.menu li {
+  position: relative;
+}
+
+/* BARRA NERA SOTTO OGNI VOCE */
+.menu li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+
+  width: 60%;
+  height: 4px;
+
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+/* HOVER → DIVENTA DORATA */
+.menu li:hover::after {
+  background: #d4af37;
+  opacity: 1;
+}
+
+/* PAGINA ATTIVA (GIA GIALLO SEMPRE ACCESO) */
+body.home .menu li:nth-child(1)::after,
+body.calendario .menu li:nth-child(2)::after,
+body.ministranti .menu li:nth-child(3)::after {
+  background: #d4af37;
+  opacity: 1;
+}

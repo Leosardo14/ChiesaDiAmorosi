@@ -312,6 +312,17 @@ h1 {
   color: #d4af37;
 }
 
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.logo a:hover {
+  color: #d4af37;
+}
 a {
   color: inherit;
   text-decoration: none;

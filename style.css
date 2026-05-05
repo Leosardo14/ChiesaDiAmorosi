@@ -60,10 +60,26 @@ nav {
 }
 
 /* PAGINA ATTIVA */
-body.home .menu li:nth-child(1) a,
-body.calendario .menu li:nth-child(2) a,
-body.ministranti .menu li:nth-child(3) a,
-body.contatti .menu li:nth-child(4) a {
+
+/* LINK BASE */
+.menu a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
+}
+
+/* HOVER */
+.menu a:hover {
+  background: #d4af37;
+  color: white;
+}
+
+/* PAGINA ATTIVA */
+.menu a.active {
   background: #d4af37;
   color: white;
 }

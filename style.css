@@ -36,19 +36,36 @@ nav {
   cursor: pointer;
 }
 
-.menu li::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  background: #d4af37;
-  bottom: -6px;
-  left: 0;
+
+
+/* LINK BASE */
+.menu a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 8px;
   transition: 0.3s;
 }
 
-.menu li:hover::after {
-  width: 100%;
+/* RETTANGOLO NERO TRASPARENTE */
+.menu li a {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* HOVER DORATO */
+.menu li a:hover {
+  background: #d4af37;
+  color: white;
+}
+
+/* PAGINA ATTIVA */
+body.home .menu li:nth-child(1) a,
+body.calendario .menu li:nth-child(2) a,
+body.ministranti .menu li:nth-child(3) a,
+body.contatti .menu li:nth-child(4) a {
+  background: #d4af37;
+  color: white;
 }
 
 .logo {

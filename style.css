@@ -385,3 +385,71 @@ body.ministranti .menu li:nth-child(3)::after {
   background: #d4af37;
   opacity: 1;
 }
+
+
+
+/* LINK BASE */
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* HOVER */
+.menu a:hover {
+  color: #d4af37;
+}
+
+/* BARRA SOTTO BASE */
+.menu li {
+  position: relative;
+}
+
+.menu li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+
+  width: 60%;
+  height: 4px;
+
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+/* HOVER → GIALLA */
+.menu li:hover::after {
+  background: #d4af37;
+  opacity: 1;
+}
+
+/* 🔥 PAGINA ATTIVA = SEMPRE ACCESA */
+
+/* HOME */
+body.home .menu li:nth-child(1)::after {
+  background: #d4af37;
+  opacity: 1;
+}
+
+/* CALENDARIO */
+body.calendario .menu li:nth-child(2)::after {
+  background: #d4af37;
+  opacity: 1;
+}
+
+/* MINISTRANTI */
+body.ministranti .menu li:nth-child(3)::after {
+  background: #d4af37;
+  opacity: 1;
+}
+
+/* CONTATTI */
+body.contatti .menu li:nth-child(4)::after {
+  background: #d4af37;
+  opacity: 1;
+}

@@ -1,4 +1,8 @@
 body {
+  overflow: hidden;
+}
+
+body {
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   background-color: #f4efe6;
@@ -53,7 +57,7 @@ nav {
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 70vh;
   background: url('images/chiesa.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -79,7 +83,7 @@ nav {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 110px;
+  font-size: 70px;
   letter-spacing: 6px;
   margin: 10px 0;
 }
@@ -126,7 +130,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 80px;
+  padding: 30px;
   background-color: #efe6d6;
 }
 

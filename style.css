@@ -229,6 +229,38 @@ h1 {
   transition: 0.3s;
 }
 
+/* PAGINA MINISTRANTI */
+.players {
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  background-color: #efe6d6;
+}
+
+.player {
+  background: #f7f0e2;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 220px;
+
+  border: 1px solid rgba(200, 169, 106, 0.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  transition: 0.3s;
+}
+
+.player:hover {
+  transform: scale(1.05);
+}
+
+.player img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 .event:hover {
   transform: scale(1.03);
   background: linear-gradient(135deg, #f3e4c7, #e0c07a);
